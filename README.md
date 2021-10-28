@@ -1,5 +1,5 @@
 # Fair and Consistent Federated Learning
-
+the implementation of FCFL (https://arxiv.org/abs/2108.08435), accepted by NeurIPS 2021.
 
 ## introduction for all files
 * dataset_generate.py: the preprocessing code for processing the Adult dataset following exactly the same data processing procedures described in (https://arxiv.org/abs/1902.00146 and https://openreview.net/forum?id=ByexElSYDr).
@@ -20,7 +20,7 @@ python 3.6, the needed libraries are in requirements.txt
 
 * dataset split
 `python dataset_generate.py`
-the split dataset is in ./data/train and ./data/test
+the split dataset should be in ./data/adult/train and ./data/adult/test (eICU data set is not directly available and detailed description is in the paper https://arxiv.org/abs/2108.08435)
 
 ## synthetic experiment 
     We conduct the experiments on two different setting 1) the initilization satisfies fairness constraints; 2) the initilization violates the fairness constraints. All results in the two setting can be reproducted by: 
