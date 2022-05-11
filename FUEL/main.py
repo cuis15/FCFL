@@ -59,7 +59,7 @@ args = parser.parse_args()
 
 args.eps = [args.eps_g, args.eps_delta_l, args.eps_delta_g]
 args.train_dir = os.path.join(args.data_dir, args.dataset, "train")
-args.test_dir = os.path.join(args.data_dir, args.datatest, "test")
+args.test_dir = os.path.join(args.data_dir, args.dataset, "test")
 args.ckpt_dir = os.path.join(args.target_dir_name, args.ckpt_dir)
 args.log_dir = os.path.join(args.target_dir_name, args.log_dir)
 args.board_dir = os.path.join(args.target_dir_name, args.board_dir)
